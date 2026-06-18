@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriwin - AI-Powered Sales Platform</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #111827;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #cbd5e1;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .cta-buttons {
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 10px;
+        }
+
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #111827;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat h2 {
+            font-size: 42px;
+        }
+
+        .section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            padding: 30px;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            transition: .3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, .08);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .benefits {
+            background: #f8fafc;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .benefit {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .testimonials {
+            background: #111827;
+            color: white;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .testimonial {
+            background: #1f2937;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .pricing {
+            text-align: center;
+        }
+
+        .price-card {
+            max-width: 500px;
+            margin: auto;
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .price {
+            font-size: 64px;
+            font-weight: 800;
+            color: #2563eb;
+        }
+
+        .footer-cta {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .footer-cta h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        @media(max-width:768px) {
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-cta h2 {
+                font-size: 32px;
+            }
+
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PNKDBNB');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNKDBNB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <section class="hero">
+        <div class="container">
+
+            <h1>Stop Paying for 10 Different Sales Tools</h1>
+
+            <p>
+                Capture Leads. Send Emails. Run WhatsApp Campaigns.
+                Make Calls. Close Deals. Everything your sales team
+                needs in one AI-powered platform.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Start Free</a>
+                <a href="#" class="btn btn-secondary">Book Demo</a>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <h2>100K+</h2>
+                    <p>Emails Sent</p>
+                </div>
+
+                <div class="stat">
+                    <h2>10X</h2>
+                    <p>Faster Outreach</p>
+                </div>
+
+                <div class="stat">
+                    <h2>24/7</h2>
+                    <p>AI Agents</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Everything Your Sales Team Needs</h2>
+                <p>Replace multiple subscriptions with one platform.</p>
+            </div>
+
+            <div class="features">
+
+                <div class="card">
+                    <h3>🤖 AI Voice Agents</h3>
+                    <p>Automate inbound and outbound calls, qualify leads, and book meetings.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📧 Email Campaigns</h3>
+                    <p>Send personalized email campaigns at scale with analytics.</p>
+                </div>
+
+                <div class="card">
+                    <h3>💬 WhatsApp Campaigns</h3>
+                    <p>Reach customers directly through WhatsApp automation.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📞 Power Dialer</h3>
+                    <p>Call hundreds of leads every day from a single dashboard.</p>
+                </div>
+
+                <div class="card">
+                    <h3>📊 CRM & Pipelines</h3>
+                    <p>Track contacts, companies, opportunities and revenue.</p>
+                </div>
+
+                <div class="card">
+                    <h3>🎯 Landing Pages</h3>
+                    <p>Create high-converting landing pages without coding.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section benefits">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Why Growing Businesses Choose Thriwin</h2>
+            </div>
+
+            <div class="benefit-grid">
+
+                <div class="benefit">
+                    <h3>Reduce Software Costs</h3>
+                    <p>Replace HubSpot, Mailchimp, Calling Tools and WhatsApp platforms.</p>
+                </div>
+
+                <div class="benefit">
+                    <h3>Close More Deals</h3>
+                    <p>AI helps identify high-intent prospects automatically.</p>
+                </div>
+
+                <div class="benefit">
+                    <h3>Increase Productivity</h3>
+                    <p>Automate repetitive tasks and focus on selling.</p>
+                </div>
+
+                <div class="benefit">
+                    <h3>Scale Outreach</h3>
+                    <p>Run campaigns across Email, Calls and WhatsApp from one place.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section testimonials">
+
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Customer Success Stories</h2>
+            </div>
+
+            <div class="testimonial-grid">
+
+                <div class="testimonial">
+                    <p>
+                        "Thriwin replaced four different tools for our sales team.
+                        The AI Voice Agent alone saves hours every day."
+                    </p>
+                    <br>
+                    <strong>★★★★★ SaaS Founder</strong>
+                </div>
+
+                <div class="testimonial">
+                    <p>
+                        "Our lead response time improved dramatically after moving
+                        to Thriwin."
+                    </p>
+                    <br>
+                    <strong>★★★★★ Marketing Agency</strong>
+                </div>
+
+                <div class="testimonial">
+                    <p>
+                        "The combination of CRM, Email and WhatsApp campaigns is unbeatable."
+                    </p>
+                    <br>
+                    <strong>★★★★★ Startup Team</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section pricing">
+
+        <div class="container">
+
+            <div class="price-card">
+
+                <h2>Start Free Today</h2>
+
+                <div class="price">$0</div>
+
+                <p>
+                    CRM + Email Campaigns + Landing Pages +
+                    AI Sales Tools
+                </p>
+
+                <br>
+
+                <a href="#" class="btn btn-primary">
+                    Create Free Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="footer-cta">
+
+        <h2>Grow Revenue Faster with AI</h2>
+
+        <p style="font-size:20px;margin-bottom:30px;">
+            Join businesses using Thriwin to automate sales and close more deals.
+        </p>
+
+        <a href="#" class="btn btn-secondary">
+            Start Free Now
+        </a>
+
+    </section>
+
+</body>
+
+</html>
